@@ -2,7 +2,7 @@
 
 Team Members: Cindy Hom, Brittany Logan
 
-Instant messenger that allows users to communicate over the Internet. Java sockets, swing, and awt are used. 
+Instant messenger with a GUI that allows users to communicate over the Internet. Java sockets, swing, and awt are used. 
 
 Alice Login            |  Bob Login
 :-------------------------:|:-------------------------:
