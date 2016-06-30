@@ -152,56 +152,6 @@ public class Gui {
         		
         	}
         }  
-
-      	
-   /*   	public void sendFile(String fileName)
-        {
-     	   try{
-     		   File aFile = new File(fileName);
-     		   byte [] byteArr = new byte [(int)aFile.length()];
-     		   fileInput = new FileInputStream(aFile);
-     		   streamIn = new DataInputStream(new 
-                        BufferedInputStream(fileInput));
-     		   streamIn.read(byteArr, 0, byteArr.length);
-     		   streamOut = new DataOutputStream(new
-                        BufferedOutputStream(socket.getOutputStream()));
-     		   System.out.println("Sending a file: " + fileName + " (" + byteArr.length + " bytes");
-     		   streamOut.write(byteArr, 0, byteArr.length);
-     		   streamOut.flush();
-     		   System.out.println("Exiting sendFile");
-     	   }
-     	   catch(IOException ioe){
-     		   System.out.println(ID + " ERROR sending: " + ioe.getMessage());
-     		   server.remove(ID);
-     		   stop();
-     	   }
-        }
-      	
-      	public static int FILE_SIZE = 6022386;
-
-
-        public void receive(String fileToReceive){
-     	   // receive file
-     	      byte [] mybytearray  = new byte [FILE_SIZE];
-     	      InputStream is = socket.getInputStream();
-     	      fos = new FileOutputStream(fileToReceive);
-     	      streamOut = new DataOutputStream(new BufferedOutputStream(fos));
-     	      int bytesRead = is.read(mybytearray,0,mybytearray.length);
-     	      int current = bytesRead;
-
-     	      do {
-     	         bytesRead =
-     	            is.read(mybytearray, current, (mybytearray.length-current));
-     	         if(bytesRead >= 0) current += bytesRead;
-     	      } while(bytesRead > -1);
-
-     	      streamOut.write(mybytearray, 0 , current);
-     	      streamOut.flush();
-     	      System.out.println("File " + fileToReceive
-     	          + " downloaded (" + current + " bytes read)");
-     	    }*/
-      	
-      	
       	
     public String get_full_mess(){
     	return full_mess;  
